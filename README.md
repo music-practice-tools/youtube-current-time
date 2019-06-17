@@ -8,7 +8,7 @@ Makes it easier to see the time when playing videos by showing the current time 
 
 ## Creating the Bookmark
 
-create a web browser bookmark using the code below as the location.
+Create a web browser bookmark using the code below as the location.
 
 ```javascript
 javascript:(function(){d=document;s=d.createElement('script');s.type='text/javascript';s.src='https://raw.githack.com/music-practice-tools/youtube-current-time/master/ytct.js';d.getElementsByTagName('head')[0].appendChild(s);})();
@@ -20,4 +20,8 @@ Alternatively, simply drag this link into your web browser's bookmarks toolbar
  </div> 
 Then select the YouTube Current Time bookmark and play an embedded video.</p>
 
- 
+## Notes
+
+This code has to keep asking the YouTube player for the time so can use a little more power than when it is not running. It requests the time every 0.5 seconds. When the current video is paused the request stop.
+
+You need a browser that supports bookmarks so that limits it to use in desktop and not mobile browsers.
