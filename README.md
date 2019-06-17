@@ -2,12 +2,16 @@
 
 Makes it easier to see the time when playing videos by showing the current time in a large format. Displays the video current time while an embedded YouTube video is playing, even when the play controls have been hidden.
 
-## Bookmark
+- Open a page with 1 or more YouTube Players on it
+- clik the book 'Current Time' mark - se below for creating it.
+- play and pause the video(s)
 
-Simply drag this button into your bookmarks. <a name="YouTube Current Time" href="javascript:(function(){d=document;jf=d.createElement('script');jf.src='https://core.atbar.org/atbar/en/latest/atbar.min.js';jf.type='text/javascript';jf.id='youtube-current-time';d.getElementsByTagName('head')[0].appendChild(jf);})();" class="btn btn-primary">YouTube Current Time</a> Then select the YouTube Current Time bookmark and play an embedded video.</p>
+## Creating the Bookmark
 
-Alternatively, create a bookmark using the code below as the URL.
+Simply drag this link into your web browser's bookmarks toolbar * [Current Time](javascript:(function(){d=document;s=d.createElement('script');s.type='text/javascript';s.src='https://raw.githack.com/music-practice-tools/youtube-current-time/master/ytct.js';d.getElementsByTagName('head')[0].appendChild(s);})();) * Then select the YouTube Current Time bookmark and play an embedded video.</p>
+
+Alternatively, create a bookmark using the code below as the location.
 
 ```javascript
-<code>javascript:(function(){d=document;jf=d.createElement('script');jf.src='https://core.atbar.org/atbar/en/latest/atbar.min.js';jf.type='text/javascript';jf.id='youtube-current-time';d.getElementsByTagName('head')[0].appendChild(jf);})();
+javascript:(function(){d=document;s=d.createElement('script');s.type='text/javascript';s.src='https://raw.githack.com/music-practice-tools/youtube-current-time/master/ytct.js';d.getElementsByTagName('head')[0].appendChild(s);})();
 ```
