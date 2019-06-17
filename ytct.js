@@ -4,11 +4,14 @@ function onYouTubeIframeAPIReady() {
 }
 
 const enhanceFn = (function ytct() {
-  window.onload = () =>s {injectYTAPI(); injectStyles()}
+  window.onload = () => {
+    injectYTAPI();
+    injectStyles();
+  };
   window.onunload = cleanup;
 
   function injectStyles() {
-    const style = document.createElement('style');
+    const style = document.createElement("style");
     style.innerHTML = `
     body[data-videotime]::before {
         position:fixed;
@@ -21,17 +24,17 @@ const enhanceFn = (function ytct() {
         border:solid thick Black;
         border-radius: 5px;
         content: attr(data-videotime);
-    }`
-    const head = document.querySelector('head');
+    }`;
+    const head = document.querySelector("head");
     head.insertBefore(style, head.firstChild);
   }
 
   function injectYTAPI() {
     var script = document.createElement("script");
     script.src = "https://www.youtube.com/iframe_api";
-    const head = document.querySelector('head');
+    const head = document.querySelector("head");
     head.insertBefore(script, head.firstChild);
-   // when ready this calls onYouTubeIframeAPIReady
+    // when ready this calls onYouTubeIframeAPIReady
   }
 
   let interval;
@@ -69,7 +72,7 @@ const enhanceFn = (function ytct() {
       }
       playerByRef[0] = player;
       if (!interval) {
-        interval = setInterval(() => setTime(playerByRef), 500);
+        interval = setInterval(() => setTime(playerByRef), 400);
       }
     }
 
