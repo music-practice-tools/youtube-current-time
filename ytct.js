@@ -9,16 +9,20 @@ function mpt_inject() {
   const style = document.createElement("style");
   style.innerHTML = `
     body[data-videotime]::before {
-        position:fixed;
-        left:20px;
-        top:20px;
-        font-size:3.5em;
-        color:black;
-        background-color:yellow;
-        padding: 7px;
-        border:solid thick Black;
-        border-radius: 5px;
+        position: fixed;
+        left: 0.5em;
+        top: 0.5em;
+        font-size: 3.5em;
+        color: black;
+        width:3.2em;
+        text-align:center;
+        background-color: yellow;
+        padding: 0.2em;
+        padding-bottom: 0.1em;
+        border: solid thick black;
+        border-radius: 0.25em;
         content: attr(data-videotime);
+        font-family: Arial,helvetica,sans-serif;
     }`;
   head.insertBefore(style, head.firstChild);
 }
@@ -53,12 +57,18 @@ function onYouTubeIframeAPIReady() {
 
     const body = document.getElementsByTagName("body")[0];
 
+    function formatTime(seconds) {
+        const mins = Math.floor(seconds / 60).toString()
+        const secs = Math.floor(seconds % 60).toString()
+        return `${mins.padStart(2, '0')}:${secs.padStart(2, '0')}`
+    }
+
     const playerByRef = [];
     function showVideoTime(player) {
       function setTime(playerByRef2) {
         const player = playerByRef2[0];
         const time = player.getCurrentTime();
-        body.setAttribute("data-videotime", Math.floor(time));
+        body.setAttribute("data-videotime", formatTime(time));
       }
       playerByRef[0] = player;
       if (!interval) {
