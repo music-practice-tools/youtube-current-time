@@ -23,7 +23,7 @@ function mpt_inject() {
         border-radius: 0.25em;
         content: attr(data-videotime);
         font-family: Arial,helvetica,sans-serif;
-        z-index: 1;
+        z-index: 9999;
     }`;
   head.insertBefore(style, head.firstChild);
 }
