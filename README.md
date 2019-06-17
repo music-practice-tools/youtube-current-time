@@ -8,7 +8,11 @@ Makes it easier to see the time when playing videos by showing the current time 
 
 ## Creating the Bookmark
 
-Simply drag this link into your web browser's bookmarks toolbar * [Current Time](javascript:(function(){d=document;s=d.createElement('script');s.type='text/javascript';s.src='https://raw.githack.com/music-practice-tools/youtube-current-time/master/ytct.js';d.getElementsByTagName('head')[0].appendChild(s);})();) * Then select the YouTube Current Time bookmark and play an embedded video.</p>
+Simply drag this link into your web browser's bookmarks toolbar 
+<div>
+  <a href="javascript:(function(){d=document;s=d.createElement('script');s.type='text/javascript';s.src='https://raw.githack.com/music-practice-tools/youtube-current-time/master/ytct.js';d.getElementsByTagName('head')[0].appendChild(s);})();">Current Time</a>. 
+ </div> 
+Then select the YouTube Current Time bookmark and play an embedded video.</p>
 
 Alternatively, create a bookmark using the code below as the location.
 
