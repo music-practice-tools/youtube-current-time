@@ -22,6 +22,9 @@ Then select the YouTube Current Time bookmark and play an embedded video.</p>
 
 ## Notes
 
-This code has to keep asking the YouTube player for the time so can use a little more power than when it is not running. It requests the time every 0.5 seconds. When the current video is paused the request stop.
+You'll need a modern browser. The latest FireFox, Chrome and Edge are OK. I've not tried Safari.
 
-You need a browser that supports bookmarks so that limits it to use in desktop and not mobile browsers.
+You also need a browser that supports bookmarks so that limits it to use in desktop and not mobile browsers.
+
+The code has to keep asking the YouTube player for the time so it can use a little more power than when it is not running. It requests the time every 0.5 seconds. When the current video is paused the requests stop.
+
