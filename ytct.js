@@ -1,18 +1,13 @@
-// Needs to be a function in order for YT iFrame API to call it
-function onYouTubeIframeAPIReady() {
-  enhanceFn();
-}
+function mpt_inject() {
+  // YouTube iFrame API
+  var script = document.createElement("script");
+  script.src = "https://www.youtube.com/iframe_api";
+  const head = document.querySelector("head");
+  head.insertBefore(script, head.firstChild);
+  // when ready this calls onYouTubeIframeAPIReady
 
-const enhanceFn = (function ytct() {
-  window.onload = () => {
-    injectYTAPI();
-    injectStyles();
-  };
-  window.onunload = cleanup;
-
-  function injectStyles() {
-    const style = document.createElement("style");
-    style.innerHTML = `
+  const style = document.createElement("style");
+  style.innerHTML = `
     body[data-videotime]::before {
         position:fixed;
         left:20px;
@@ -25,17 +20,12 @@ const enhanceFn = (function ytct() {
         border-radius: 5px;
         content: attr(data-videotime);
     }`;
-    const head = document.querySelector("head");
-    head.insertBefore(style, head.firstChild);
-  }
+  head.insertBefore(style, head.firstChild);
+}
 
-  function injectYTAPI() {
-    var script = document.createElement("script");
-    script.src = "https://www.youtube.com/iframe_api";
-    const head = document.querySelector("head");
-    head.insertBefore(script, head.firstChild);
-    // when ready this calls onYouTubeIframeAPIReady
-  }
+// Needs to be a function in order for YT iFrame API to call it
+function onYouTubeIframeAPIReady() {
+  window.onunload = cleanup;
 
   let interval;
 
@@ -72,7 +62,7 @@ const enhanceFn = (function ytct() {
       }
       playerByRef[0] = player;
       if (!interval) {
-        interval = setInterval(() => setTime(playerByRef), 400);
+        interval = setInterval(() => setTime(playerByRef), 500);
       }
     }
 
@@ -94,5 +84,7 @@ const enhanceFn = (function ytct() {
     }
   }
 
-  return enhanceYTFrames;
-})();
+  enhanceYTFrames();
+}
+
+mpt_inject();
