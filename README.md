@@ -1,6 +1,6 @@
 # youtube-current-time
 
-Provides a large clear time counter when YouTube videos are playing. Works with YouTube players that are embedded into a web page (with some restrictions including not the YouTube website).
+Provides a large clear time counter when YouTube videos are playing. Stays visible (unlike the player controls) and stay fixed while you scroll and interact with the webpage. It works with YouTube players that are embedded into a web page (with some restrictions including the YouTube website).
 
 ![A large clear timer overlayed on a video](demo.png?raw=true "The timer in action")
 
