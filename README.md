@@ -2,7 +2,7 @@
 
 Provides a large clear time counter when YouTube videos are playing. Stays visible (unlike the player controls) and stay fixed while you scroll and interact with the webpage. It works with YouTube players that are embedded into a web page (with some restrictions including the YouTube website).
 
-* Keep track of and share interesting points in a video (especially useful if sound only)
+* Keep track of and share interesting moments in a video (especially useful if sound only)
 * Provide time cues for when playing along
 
 ![A large clear timer overlayed on a video](demo.png?raw=true "The timer in action")
@@ -46,6 +46,6 @@ The bookmark is a standard Javascript Bookmarklet that injects the `ytct.js` scr
 
 The `ytct.js` code injects the [YouTube iFrame API](https://developers.google.com/youtube/iframe_api_reference) so it can access the current time. It also injects styles for the CSS time popup. The video is reloaded with an option to enable the API. APi start and stop events control an Interval which triggers polling the player current time and the display through setting a data-attribute to the time. When there are multiple players the time display tracks the one last started. 
 
-The code has to keep polling the YouTube player for the time so it will use a little more power than when it is not running. That's a concidartion when setting the poll rate and it can't be too long or there are obvious glitchs with the 1 second updates. When the current video is paused the polling stop.
+The code has to keep polling the YouTube player for the time so it will use a little more power than when it is not running. That's a consideration when setting the poll rate and it can't be too long or there are obvious glitchs with the 1 second updates. When the current video is paused the polling stop.
 
-You can included the code in your own webpages avoiding the need to use the bookmark.
+You can always include the code in your own webpages, avoiding the need for a bookmark.
