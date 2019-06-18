@@ -10,6 +10,7 @@ Provides a large clear time counter when YouTube videos are playing. Stays visib
 - open a web page with a YouTube video player on it
 - click the bookmark / favourite 'Current Time' - see below for how to create this.
 - play and pause the video(s)
+- Note the bookmark will reload the videos on a page so the players reset to the start
 
 You'll need to reclick the bookmark every time the page is refresehed or a new page is opened. 
 
@@ -42,8 +43,8 @@ You also need a browser that supports bookmarks so that would appear to limit it
 
 The bookmark is a standard Javascript Bookmarklet that injects the `ytct.js` script into the current page. 
 
-The `ytct.js` code injects the [YouTube iFrame API](https://developers.google.com/youtube/iframe_api_reference) so it can access the current time. It also injects styles for the CSS time popup. APi start and stop events control an Interval which triggers polling the player current time and the display through setting a data-attribute to the time. When there are multiple players the time display tracks the one last started. 
+The `ytct.js` code injects the [YouTube iFrame API](https://developers.google.com/youtube/iframe_api_reference) so it can access the current time. It also injects styles for the CSS time popup. The video is reloaded with an option to enable the API. APi start and stop events control an Interval which triggers polling the player current time and the display through setting a data-attribute to the time. When there are multiple players the time display tracks the one last started. 
 
-The code has to keep polling the YouTube player for the time so it can use a little more power than when it is not running. It requests the time every 0.5 seconds to avoid 1 second glitches. When the current video is paused the polling stop.
+The code has to keep polling the YouTube player for the time so it will use a little more power than when it is not running. That's a concidartion when setting the poll rate and it can't be too long or there are obvious glitchs with the 1 second updates. When the current video is paused the polling stop.
 
 You can included the code in your own webpages avoiding the need to use the bookmark.
