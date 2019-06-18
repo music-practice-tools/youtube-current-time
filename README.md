@@ -23,9 +23,10 @@ Create a web browser bookmark copying the code below into the Location or URL fi
 javascript:(function(){d=document;s=d.createElement('script');s.type='text/javascript';s.src='https://raw.githack.com/music-practice-tools/youtube-current-time/master/ytct.js';d.getElementsByTagName('head')[0].appendChild(s);})();
 ```
 
-That's it.
-
 Note that on Chrome and Edge you will have to create a Favourite 1st (any page) and then edit it.
+
+That's it. Test it on [this page](https://raw.githack.com/music-practice-tools/youtube-current-time/master/test.html).
+
 
 <!-- Alternatively, simply drag this link into your web browser's bookmarks toolbar 
 <div>
