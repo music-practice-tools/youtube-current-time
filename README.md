@@ -17,7 +17,7 @@ You'll need to reclick the bookmark every time the page is refresehed or a new p
 
 ## Creating the Bookmark / Favourite
 
-Create a web browser bookmark copying the code below into the Location or URL field.
+Create a web browser bookmark / favourite and copy the code below into the Location or URL field in the bookmark form.
 
 ```javascript
 javascript:(function(){d=document;s=d.createElement('script');s.type='text/javascript';s.src='https://raw.githack.com/music-practice-tools/youtube-current-time/master/ytct.js';d.getElementsByTagName('head')[0].appendChild(s);})();
