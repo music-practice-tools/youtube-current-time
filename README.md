@@ -10,7 +10,8 @@ Provides a large clear time counter when YouTube videos are playing. Stays visib
 - open a web page with a YouTube video player on it
 - click the bookmark / favourite 'Current Time' - see below for how to create this.
 - play and pause the video(s)
-- Note the bookmark will reload the videos on a page so the players reset to the start
+ 
+Note the bookmark will reload the videos on a page so the players reset to the start
 
 You'll need to reclick the bookmark every time the page is refresehed or a new page is opened. 
 
