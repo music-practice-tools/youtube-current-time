@@ -13,6 +13,6 @@ if (supportsES6) {
   document.head.appendChild(script);
 } else {
   alert(
-    "Unable to use YouTube Time with your Web Browser. Please use a more recent browser. "
+    "Unable to use YouTube Time with your Web Browser.\n\nPlease use a more recent browser. "
   );
 }
