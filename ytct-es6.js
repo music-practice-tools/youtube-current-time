@@ -28,6 +28,7 @@ function mpt_inject() {
     // YouTube iFrame API
     var script = document.createElement("script");
     script.src = "https://www.youtube.com/iframe_api";
+    script.type = "text/javascript";
     where.insertBefore(script, head.firstChild);
     // when ready this calls onYouTubeIframeAPIReady
   }
