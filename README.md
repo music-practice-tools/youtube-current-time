@@ -4,6 +4,7 @@ Provides a large clear time counter when YouTube videos are playing. Stays visib
 
 - Keep track of and share interesting moments in a video (especially useful if sound only)
 - Provide time cues for when playing along
+- Originally developed to support the activities in a [Musical U](https://www.musical-u.com/) listening course.
 
 ![A large clear timer overlayed on a video](demo.png?raw=true "The timer in action")
 
