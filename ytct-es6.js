@@ -1,3 +1,5 @@
+/* uses some ES2015 features so a modern browser is required */
+
 function mpt_inject() {
   const head = document.querySelector("head");
 
