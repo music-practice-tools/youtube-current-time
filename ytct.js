@@ -59,17 +59,17 @@ function onYouTubeIframeAPIReady() {
     const body = document.getElementsByTagName("body")[0];
 
     function formatTime(seconds) {
-        const mins = Math.floor(seconds / 60).toString()
-        const secs = Math.floor(seconds % 60).toString()
-        return `${mins.padStart(2, '0')}:${secs.padStart(2, '0')}`
+      const mins = Math.floor(seconds / 60).toString();
+      const secs = Math.floor(seconds % 60).toString();
+      return `${mins.padStart(2, "0")}:${secs.padStart(2, "0")}`;
     }
 
     const playerByRef = [];
     function showVideoTime(player) {
       function setTime(playerByRef2) {
         const player = playerByRef2[0];
-        const time = player.getCurrentTime();
-        body.setAttribute("data-videotime", formatTime(time));
+        const time = player ? formatTime(player.getCurrentTime()) : "";
+        body.setAttribute("data-videotime", time);
       }
       playerByRef[0] = player;
       if (!interval) {
@@ -83,6 +83,7 @@ function onYouTubeIframeAPIReady() {
     }
 
     function onPlayerStateChange(event) {
+      showVideoTime();
       const { data: playerStatus, target: player } = event;
 
       if (playerStatus == YT.PlayerState.PLAYING) {
