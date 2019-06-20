@@ -57,6 +57,7 @@ function onYouTubeIframeAPIReady() {
     );
     ytFrames.forEach((frame, i, ar) => {
       // Reload with API enabled
+      frame.src += frame.src.includes("?") ? "" : "?feature=oembed";
       frame.src += `&enablejsapi=1&domain=${window.location.host}`;
       const player = new YT.Player(frame, {
         events: {
