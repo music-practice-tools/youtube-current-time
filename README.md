@@ -12,6 +12,11 @@ Provides a large clear time counter when YouTube videos are playing. Stays visib
 
 The [Test Page](https://raw.githack.com/music-practice-tools/youtube-current-time/master/test.html) contains 2 embedded YouTube video and instructions.
 
+If you need to manually create a favourite then use this code as the Location or URL field:
+```javascript
+javascript:(function(){d=document;s=d.createElement('script');s.type='text/javascript';s.src='https://raw.githack.com/music-practice-tools/youtube-current-time/master/ytct.js';d.getElementsByTagName('head')[0].appendChild(s);})();
+```
+
 In general:
 
 - open a web page with a YouTube video player on it;
