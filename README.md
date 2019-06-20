@@ -45,8 +45,8 @@ You also need a browser that supports bookmarks so that would appear to limit it
 
 The bookmark is a standard Javascript Bookmarklet that injects the `ytct.js` script into the current page.
 
-The `ytct.js` code injects the [YouTube iFrame API](https://developers.google.com/youtube/iframe_api_reference) so it can access the current time. It also injects styles for the CSS time popup. The video is reloaded with an option to enable the API. APi start and stop events control an Interval which triggers polling the player current time and the display through setting a data-attribute to the time. When there are multiple players the time display tracks the one last started.
+The `ytct.js` code does a crude check for ES6 support and alerts the user if not availale. Otherwise, the code loads `ytct-es6.js` which injects the [YouTube iFrame API](https://developers.google.com/youtube/iframe_api_reference) so it can access the current time. It also injects styles for the CSS time popup. The video is reloaded with an option to enable the API. APi start and stop events control an Interval which triggers polling the player current time and the display through setting a data-attribute to the time. When there are multiple players the time display tracks the one last started.
 
 The code has to keep polling the YouTube player for the time so it will use a little more power than when it is not running. That's a consideration when setting the poll rate and it can't be too long or there are obvious glitchs with the 1 second updates. When the current video is paused the polling stop.
 
-You can always include the code in your own webpages, avoiding the need for a bookmark.
+You can always include the code directly in your own webpages, avoiding the need for a bookmark.
