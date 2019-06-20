@@ -9,7 +9,7 @@ Provides a large clear time counter when YouTube videos are playing. Stays visib
 
 ## Try and install
 
-The [Test Page](<(https://raw.githack.com/music-practice-tools/youtube-current-time/master/test.html)>) contains 2 embedded YouTube video and instructions.
+The [Test Page](https://raw.githack.com/music-practice-tools/youtube-current-time/master/test.html) contains 2 embedded YouTube video and instructions.
 
 In general:
 
@@ -19,7 +19,7 @@ In general:
 
 Note the bookmark will reload the videos on a page so the players reset to the start
 
-You'll need to reclick the bookmark every time the page is refresehed or a new page is opened.
+The timer needs reloading every time the page is refreshed or a new page is opened, Simply click the bookmark again.
 
 <!-- Alternatively, simply drag this link into your web browser's bookmarks toolbar
 <div>
