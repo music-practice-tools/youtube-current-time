@@ -17,7 +17,6 @@
 
     const script = document.createElement("script");
     const path = getES6Script(document.currentScript.src);
-    console.log(path);
     script.src = path;
     document.head.appendChild(script);
   } else {
