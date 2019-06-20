@@ -37,7 +37,7 @@ Then select the YouTube Current Time bookmark and play an embedded video.</p>
 
 ## Notes
 
-You'll need a modern browser. The latest Firefox, Chrome, Edge (and Edge Cromium) and Safari are all OK.
+You'll need a modern browser. The latest Firefox, Chrome, Edge, Edge Chromium and Safari (MacOS and iPad) are all OK.
 
 You also need a browser that supports bookmarks so that would appear to limit it's use to desktop browsers and not mobile browsers.
 
