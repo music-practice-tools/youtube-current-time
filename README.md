@@ -16,7 +16,7 @@ If you need to manually create a favourite then use this code as the Location or
 ```javascript
 javascript:(function(){d=document;s=d.createElement('script');s.type='text/javascript';s.src='https://raw.githack.com/music-practice-tools/youtube-current-time/master/ytct.js';d.getElementsByTagName('head')[0].appendChild(s);})();
 ```
-Some browsers require that you first bookmark amy site and then edit the bookmark.
+Some browsers require that you first bookmark any site and then edit the bookmark.
 
 In general, to use YouTube Time:
 
