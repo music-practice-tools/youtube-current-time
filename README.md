@@ -1,6 +1,6 @@
 # youtube-current-time
 
-Provides a large clear time counter when YouTube videos are playing. Stays visible (unlike the player controls) and stay fixed while you scroll and interact with the webpage. It works with YouTube players that are embedded into a web page (with some restrictions including the YouTube website).
+Provides a large clear time counter when YouTube videos are playing. Stays visible (unlike the player controls) in fixed position floating above the page contents while you scroll and interact with the webpage. It works with YouTube players that are embedded into a web page (with some restrictions including the YouTube website).
 
 - Keep track of and share interesting moments in a video (especially useful if sound only)
 - Provide time cues for when playing along
@@ -13,9 +13,11 @@ Provides a large clear time counter when YouTube videos are playing. Stays visib
 The [Test Page](https://raw.githack.com/music-practice-tools/youtube-current-time/master/test.html) contains 2 embedded YouTube video and instructions for installing a bookmark.
 
 If you need to manually create a favourite then use this code as the Location or URL field:
+
 ```javascript
 javascript:(function(){d=document;s=d.createElement('script');s.type='text/javascript';s.src='https://raw.githack.com/music-practice-tools/youtube-current-time/master/ytct.js';d.getElementsByTagName('head')[0].appendChild(s);})();
 ```
+
 Some browsers require that you first bookmark any site and then edit the bookmark.
 
 In general, to use YouTube Time:
