@@ -43,7 +43,7 @@ You'll need a modern browser. The latest Firefox, Chrome, Edge, Edge Chromium an
 
 You also need a browser that supports bookmarks so that would appear to limit it's use to desktop browsers and not mobile browsers.
 
-# Code Notes
+## Code Notes
 
 The bookmark is a standard Javascript Bookmarklet that injects the `ytct.js` script into the current page.
 
