@@ -1,16 +1,19 @@
 # youtube-current-time
 
-Provides a large clear time counter when YouTube videos are playing. Stays visible (unlike the player controls) in fixed position floating above the page contents while you scroll and interact with the webpage. It works with YouTube players that are embedded into a web page (with some restrictions including the YouTube website).
+Provides a large clear static time display when YouTube music videos are playing, even when the page is scrolled so the video player is off screen.
 
-- Keep track of and share interesting moments in a video (especially useful if sound only)
-- Provide time cues for when playing along
-- Originally developed to support the activities in a [Musical U](https://www.musical-u.com/) listening course.
+The time stays visible at all times in fixed position floating above the page contents allowing you to scroll and interact with the webpage. It works with YouTube players that are embedded into a web page (with some restrictions including the YouTube website).
+
+Designed to support interactive music activities based on YouTube videos where only the audio is relevant. These are part of the [Musical U](https://www.musical-u.com/) Musician's Ear course. Also useful to:
+
+- Keep track of and share interesting moments in a video
+- Provide time cues for when playing along to music
 
 ![A large clear timer overlayed on a video](demo.png?raw=true "The timer in action")
 
 ## Try and install
 
-The [Test Page](https://raw.githack.com/music-practice-tools/youtube-current-time/master/test.html) contains 2 embedded YouTube video and instructions for installing a bookmark.
+The [Test Page](https://raw.githack.com/music-practice-tools/youtube-current-time/master/test.html) contains 2 embedded YouTube video and instructions for installing a bookmark that makes it easy to show the time on a webpage.
 
 If you need to manually create a favourite then use this code as the Location or URL field:
 
