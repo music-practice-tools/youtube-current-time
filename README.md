@@ -1,22 +1,24 @@
 # youtube-current-time
 
-Provides a large clear time counter when YouTube videos are playing embedded in a webpage. Ideal for listening to the audio of a video while viewing the rest of a page. Keeps the current play time visible while you scroll the player off the screen. 
+Provides a large clear current play time display when YouTube videos are playing embedded in a webpage. Ideal for when listening to the audio while viewing the rest of a page. The current play time stays visible at all times in a fixed position and floating above the page contents, even when the player is scrolled off the screen. 
 
 - Cue on a time when listening
 - Note when something happens
 
-This was originally developed to support the interactive activities in a [Musical U](https://www.musical-u.com/) listening course.
+Project was designed to support interactive music activities in the [Musical U](https://www.musical-u.com/) Musician's Ear course. 
 
 ![A large clear timer overlayed on a video](demo.png?raw=true "The timer in action")
 
 ## Try and install
 
-The [Test Page](https://raw.githack.com/music-practice-tools/youtube-current-time/master/test.html) contains 2 embedded YouTube video and instructions for installing a bookmark.
+The [Test Page](https://raw.githack.com/music-practice-tools/youtube-current-time/master/test.html) contains 2 embedded YouTube video and instructions for installing a bookmark that makes it easy to show the time on a webpage.
 
 If you need to manually create a favourite then use this code as the Location or URL field:
+
 ```javascript
 javascript:(function(){d=document;s=d.createElement('script');s.type='text/javascript';s.src='https://raw.githack.com/music-practice-tools/youtube-current-time/master/ytct.js';d.getElementsByTagName('head')[0].appendChild(s);})();
 ```
+
 Some browsers require that you first bookmark any site and then edit the bookmark.
 
 In general, to use YouTube Time:
@@ -42,7 +44,7 @@ You'll need a modern browser. The latest Firefox, Chrome, Edge, Edge Chromium an
 
 You also need a browser that supports bookmarks so that would appear to limit it's use to desktop browsers and not mobile browsers.
 
-# Code Notes
+## Code Notes
 
 The bookmark is a standard Javascript Bookmarklet that injects the `ytct.js` script into the current page.
 
