@@ -1,10 +1,11 @@
 # youtube-current-time
 
-Provides a large clear time counter when YouTube videos are playing. Stays visible (unlike the player controls) and stay fixed while you scroll and interact with the webpage. It works with YouTube players that are embedded into a web page (with some restrictions including the YouTube website).
+Provides a large clear time counter when YouTube videos are playing embedded in a webpage. Ideal for listening to the audio of a video while viewing the rest of a page. Keeps the current play time visible while you scroll the player off the screen. 
 
-- Keep track of and share interesting moments in a video (especially useful if sound only)
-- Provide time cues for when playing along
-- Originally developed to support the activities in a [Musical U](https://www.musical-u.com/) listening course.
+- Cue on a time when listening
+- Note when something happens
+
+This was originally developed to support the interactive activities in a [Musical U](https://www.musical-u.com/) listening course.
 
 ![A large clear timer overlayed on a video](demo.png?raw=true "The timer in action")
 
