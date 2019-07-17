@@ -1,11 +1,11 @@
 # youtube-current-time
 
-Provides a large clear current play time display when YouTube videos are playing embedded in a webpage. Ideal for when listening to the audio while viewing the rest of a page. The current play time stays visible at all times in a fixed position and floating above the page contents, even when the player is scrolled off the screen. 
+Provides a large clear current play time display when YouTube videos are playing embedded in a webpage. Ideal for when listening to the audio while viewing the rest of a page. The current play time stays visible at all times in a fixed position and floating above the page contents, even when the player is scrolled off the screen.
 
 - Cue on a time when listening
 - Note when something happens
 
-Project was designed to support interactive music activities in the [Musical U](https://www.musical-u.com/) Musician's Ear course. 
+Project was designed to support interactive music activities in the [Musical U](https://www.musical-u.com/) Musician's Ear course.
 
 ![A large clear timer overlayed on a video](demo.png?raw=true "The timer in action")
 
@@ -16,7 +16,14 @@ The [Test Page](https://raw.githack.com/music-practice-tools/youtube-current-tim
 If you need to manually create a favourite then use this code as the Location or URL field:
 
 ```javascript
-javascript:(function(){d=document;s=d.createElement('script');s.type='text/javascript';s.src='https://raw.githack.com/music-practice-tools/youtube-current-time/master/ytct.js';d.getElementsByTagName('head')[0].appendChild(s);})();
+javascript: (function() {
+  d = document;
+  s = d.createElement("script");
+  s.type = "text/javascript";
+  s.src =
+    "https://raw.githack.com/music-practice-tools/youtube-current-time/master/ytct.js";
+  d.getElementsByTagName("head")[0].appendChild(s);
+})();
 ```
 
 Some browsers require that you first bookmark any site and then edit the bookmark.
@@ -30,13 +37,6 @@ In general, to use YouTube Time:
 Note the bookmark will reload the videos on a page so the players reset to the start
 
 The timer needs reloading every time the page is refreshed or a new page is opened, Simply click the bookmark again.
-
-<!-- Alternatively, simply drag this link into your web browser's bookmarks toolbar
-<div>
-  <a href="javascript:(function(){d=document;s=d.createElement('script');s.type='text/javascript';s.src='https://raw.githack.com/music-practice-tools/youtube-current-time/master/ytct.js';d.getElementsByTagName('head')[0].appendChild(s);})();">Current Time</a>.
- </div>
-Then select the YouTube Current Time bookmark and play an embedded video.</p>
--->
 
 ## Notes
 
