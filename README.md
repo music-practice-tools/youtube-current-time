@@ -7,6 +7,8 @@ Provides a large clear current play time display when YouTube videos are playing
 
 Project was designed to support interactive music activities in the [Musical U](https://www.musical-u.com/) Musician's Ear course.
 
+An updated version with smoother UI is used within MusicalU courses. I developed it when working with the MU team.
+
 ![A large clear timer overlayed on a video](demo.png?raw=true "The timer in action")
 
 ## Try and install
